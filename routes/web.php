@@ -22,3 +22,5 @@ Route::get('/index',function(){
 Auth::routes();
 
 
+
+

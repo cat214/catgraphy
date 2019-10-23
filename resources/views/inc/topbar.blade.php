@@ -6,4 +6,9 @@
         <li class="top-bar-list"><a href="/login">ログイン</a></li>
         <li class="top-bar-list"><a href="/mypage">マイページ</a></li>
     </ul>
+    @if(Auth::check())
+    ログインしています
+    @else
+    ログインしていません
+    @endif
 </div>
