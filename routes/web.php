@@ -21,6 +21,7 @@ Route::get('/index',function(){
 
 Auth::routes();
 
-
+Route::get('/create','PhotosController@create');
+Route::post('/index','PhotosController@create');
 
 
