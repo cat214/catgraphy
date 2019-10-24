@@ -17,7 +17,8 @@ Route::post('/index','PhotosController@upload');
 
 Auth::routes();
 
-Route::get('/create','PhotosController@create');
+Route::get('/photos/create','PhotosController@create');
+Route::get('/photos/{id}','PhotosController@create');
 
 
 

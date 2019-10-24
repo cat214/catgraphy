@@ -19,6 +19,7 @@ class CreatePhotosTable extends Migration
             $table->string('description');
             $table->string('photo');
             $table->string('size');
+            $table->string('thumbnail');
             $table->timestamps();
         });
     }

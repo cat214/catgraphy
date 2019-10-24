@@ -438,3 +438,61 @@ label {
 label input {
   display: none;
 }
+
+
+
+
+/* メインコンテンツ */
+.float_box ul,
+.float_box li,
+.float_box p
+{
+  /* [余白をリセット] */
+  margin: 0;
+  padding: 0;
+}
+.float_box li
+{
+  /* [黒点を非表示] */
+  list-style-type: none;
+}
+
+.float_box li
+{
+  /* [要素を横並びにする] */
+  float: left;
+ 
+  /* [pxだと、相対的な値にならないので、%を使う] */
+  /* [4個分のサイズを指定] */
+  width: 25%;
+}
+.float_box ul
+{
+  /* [縦幅を復帰。] */
+  overflow: hidden;
+}
+.float_box .image
+{
+  /* [ボックス内を最大サイズにする] */
+  max-width: 100%;
+}
+.float_box .image
+{
+  /* [画像が真ん中に来るようにする] */
+  /* [画像と文字の間に余白を入れる] */
+  display: block;
+  margin: 0 auto 5px;
+}
+.float_box .name
+{
+  /* [価格との間に余白を入れる] */
+  margin-bottom: .75em;
+}
+.content-image{
+  height: 400px;
+}
+
+
+
+
+

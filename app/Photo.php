@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Photo extends Model
 {   
     protected $table = 'photos';
-    protected $fillable = ['title','description','photo','user_id'];
+    protected $fillable = ['title','description','photo','user_id','thumbnail',];
 
     // バリデーションのルール追加する
     public static $rules = array(
