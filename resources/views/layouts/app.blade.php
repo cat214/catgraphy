@@ -10,6 +10,7 @@
 </head>
 <body>
     @include('inc.topbar')
+    @include('inc.message')
     @yield('content')
     <!-- jqueryの読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

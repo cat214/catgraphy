@@ -10,18 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Http\Request;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/index',function(){
-    return view('layouts.app');
-});
+Route::get('/index','PhotosController@index');
+Route::post('/index','PhotosController@upload');
 
 Auth::routes();
 
 Route::get('/create','PhotosController@create');
-Route::post('/index','PhotosController@create');
+
 
 
