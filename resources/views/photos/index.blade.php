@@ -1,17 +1,17 @@
 @extends('layouts.app')
 @section('content')
 @isset($photos)
-<div class="float_box">
+<div id="grid">
     <ul>
         @foreach($photos as $photo)
-            <li class="content-list"> <!-- ▼ アイテム -->
-                <a href="/photos/{{$photo->id}}">
+            <li class="content-list"> 
+                <a class="content-link">
                     <img src="storage/photos/{{$photo->thumbnail}}" class="content-image">
                     <p class="content-title">{{$photo->title}}</p>
                 </a>
-            </li> <!-- ▲ アイテム -->
+            </li>
         @endforeach
     </ul>
-</div>
+<div>
 @endisset
 @endsection
