@@ -5,7 +5,7 @@
     <ul>
         @foreach($photos as $photo)
             <li class="content-list"> 
-                <a class="content-link">
+                <a href="/photos/{{$photo->id}}" class="content-link">
                     <img src="storage/photos/{{$photo->thumbnail}}" class="content-image">
                     <p class="content-title">{{$photo->title}}</p>
                 </a>

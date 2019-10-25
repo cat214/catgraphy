@@ -456,6 +456,31 @@ label input {
 
 
 
+/* 詳細ページ */
+.content-detail{
+  width: 1200px;
+  height: 500px;
+  margin: 50px auto;
+}
+.detail-image{
+  width: auto;
+  height: 800px;;
+}
+.content h1,p{
+  margin: 0 auto;
+}
+.detail-title{
+  text-align: center;
+  font-size: 45px;
+}
+.detail-description{
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+
+
+
 
 
 
