@@ -61,6 +61,25 @@ class PhotosController extends Controller
     }
 
     public function edit(Request $request,$photo_id){
-        return view('user.edit')->with('photo_id',$photo_id);
+        $photo = Photo::find($photo_id);
+        return view('photos.edit')->with('photo',$photo);
+    }
+
+    public function update(Request $request,$photo_id){
+        $update_validate_rule = [
+            'title' => 'required',
+            'description' => 'required',
+        ];
+        $this->validate($request,$update_validate_rule);
+        //レコード取得
+        $photo = Photo::find($photo_id);
+        $photo->title = $request->title;
+        $photo->description = $request->description;
+        $photo->photo = $request->photo;
+        $photo->size = $request->size;
+        $photo->thumbnail = $request->thumbnail;
+        $photo->save();
+
+        return redirect('/index')->with('success','投稿を編集しました。');
     }
 }

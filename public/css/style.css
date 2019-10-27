@@ -455,7 +455,7 @@ textarea {
 }
 .detail-image{
   width: auto;
-  height: 800px;;
+  height: 800px;
 }
 .content h1,p{
   margin: 0 auto;
@@ -479,7 +479,11 @@ textarea {
   text-align: center;
 }
 
-
+/* 編集画面 */
+.edit-image{
+width: 430px;
+height: auto;
+}
 
 
 
