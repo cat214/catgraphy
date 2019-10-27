@@ -18,9 +18,12 @@ Route::post('/index','PhotosController@upload');
 Auth::routes();
 
 Route::get('/photos/create','PhotosController@create');
-Route::get('/photos/{photo_id}','PhotosController@show');
+Route::get('/photos/{photo_id}','PhotosController@detail');
 
 Route::get('/mypage','UsersController@mypage');
+
+
+
 
 
 

@@ -468,6 +468,9 @@ textarea {
   margin-top: 30px;
   font-size: 30px;
 }
+#detail-btn{
+  background-color: #FFF;
+}
 
 
 /* マイページ */

@@ -54,8 +54,9 @@ class PhotosController extends Controller
         return redirect('/index')->with('success','画像を保存しました。');
     }
 
-    public function show(Request $request,$photo_id){
+    public function detail(Request $request,$photo_id){
+        $user = Auth::user();
         $photo = Photo::find($photo_id);
-        return view('photos.show')->with('photo',$photo);
+        return view('photos.detail',compact('user','photo'));
     }
 }
