@@ -5,6 +5,8 @@
         <li class="top-bar-list"><a href="/photos/create">投稿する</a></li>
         <li class="top-bar-list"><a href="/login">ログイン</a></li>
         <li class="top-bar-list"><a href="/mypage">マイページ</a></li>
+        @if(Auth::check())
         <h3 class="top-bar-list">{{Auth::user()->name}}さん</h3>
+        @endif
     </ul>
 </div>

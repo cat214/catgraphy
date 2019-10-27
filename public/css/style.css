@@ -357,11 +357,6 @@ body{
     display: flex;
 }
 
-#right{
-  margin-right: 50%;
-  text-align: right;
-}
-
 
 .top-bar-list{
     display: inline-block;
@@ -433,8 +428,9 @@ textarea {
 }
 [type="submit"]:hover { background:#FFF; }
 
-
-
+.mypage-form{
+  
+}
 
 
 

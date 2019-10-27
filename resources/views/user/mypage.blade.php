@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('content')
-    @if($user)
+    @if(Auth::check())
+    <form class="mypage-form"action="/logout" method="post">
+    {{ csrf_field() }}
+    <input type="hidden" name="name" value="{{$user->name}}">
+    <input type="submit" calss="btn btn-primary" name="logout" value="ログアウト">
+    </form>
     <h1 class="mypage-username">{{$user->name}}の投稿</h1>
     @else
     ユーザー情報がありません
