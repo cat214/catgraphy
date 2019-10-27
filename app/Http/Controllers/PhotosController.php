@@ -59,4 +59,8 @@ class PhotosController extends Controller
         $photo = Photo::find($photo_id);
         return view('photos.detail',compact('user','photo'));
     }
+
+    public function edit(Request $request,$photo_id){
+        return view('user.edit')->with('photo_id',$photo_id);
+    }
 }
