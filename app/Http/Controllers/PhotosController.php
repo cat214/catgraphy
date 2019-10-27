@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Photo;
 use Illuminate\Support\Facades\Log;
 use Image;
+use Illuminate\Support\Facades\Auth;
 
 
 class PhotosController extends Controller
@@ -38,8 +39,11 @@ class PhotosController extends Controller
         //サムネイル画像をリサイズして上書き
         $thumbnailpath = public_path('storage/photos/thumbnails/'.$filenameToStore);
         $image = Image::make($thumbnailpath)->resize(500,300)->save($thumbnailpath);
+        //ユーザーIDを取得
+        $user_id = Auth::id();
         //DBに各値を保存
         $photo = new Photo();
+        $photo->user_id = $user_id;
         $photo->title = $request->title;
         $photo->description = $request->description;
         $photo->size = $request->file('photo')->getClientSize();

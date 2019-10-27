@@ -15,4 +15,5 @@ class Photo extends Model
         'description' => 'required',
         'photo' => 'required|image|max:2048',
     );
+    
 }

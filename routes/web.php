@@ -20,5 +20,7 @@ Auth::routes();
 Route::get('/photos/create','PhotosController@create');
 Route::get('/photos/{photo_id}','PhotosController@show');
 
+Route::get('/mypage','UsersController@mypage');
+
 
 

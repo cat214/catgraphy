@@ -412,7 +412,7 @@ textarea {
 
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
+  width:100%;
   background:#FFF;
   border-radius:5px;
   border:0;
@@ -427,17 +427,8 @@ textarea {
 }
 [type="submit"]:hover { background:#FFF; }
 
-label {
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-  padding: 15px 30px;
-  margin: 0 10px 0 0;
-  display: inline-block;
-}
-label input {
-  display: none;
-}
+
+
 
 
 
@@ -479,6 +470,11 @@ label input {
 }
 
 
+/* マイページ */
+
+.mypage-username{
+  text-align: center;
+}
 
 
 
