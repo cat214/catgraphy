@@ -468,7 +468,7 @@ textarea {
   margin-top: 30px;
   font-size: 30px;
 }
-#detail-btn{
+#detail-link{
   background-color: #FFF;
 }
 
@@ -485,5 +485,8 @@ width: 430px;
 height: auto;
 }
 
+.btn-danger{
+  background-color: red;
+}
 
 

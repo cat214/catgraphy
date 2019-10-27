@@ -21,6 +21,8 @@ Route::get('/photos/create','PhotosController@create');
 Route::get('/photos/{photo_id}','PhotosController@detail');
 Route::get('/photos/{photo_id}/edit','PhotosController@edit');
 Route::post('/photos/{photo_id}/edit','PhotosController@update');
+Route::get('/photos/{photo_id}/delete','PhotosController@delete');
+
 
 Route::get('/mypage','UsersController@mypage');
 

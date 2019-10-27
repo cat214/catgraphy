@@ -51,7 +51,7 @@ class PhotosController extends Controller
         $photo->thumbnail = $path;
         $photo->save();
 
-        return redirect('/index')->with('success','画像を保存しました。');
+        return redirect('/index')->with('success','画像を保存しました');
     }
 
     public function detail(Request $request,$photo_id){
@@ -80,6 +80,12 @@ class PhotosController extends Controller
         $photo->thumbnail = $request->thumbnail;
         $photo->save();
 
-        return redirect('/index')->with('success','投稿を編集しました。');
+        return redirect('/index')->with('success','投稿を編集しました');
+    }
+
+    public function delete(Request $request,$photo_id){
+        $photo = Photo::find($photo_id);
+        $photo->delete();
+        return redirect('/index')->with('success','投稿を削除しました');
     }
 }
