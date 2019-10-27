@@ -25,6 +25,7 @@ Route::get('/photos/{photo_id}/delete','PhotosController@delete');
 
 
 Route::get('/mypage','UsersController@mypage');
+Route::get('/logout','AuthController@logout');
 
 
 
