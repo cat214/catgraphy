@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-    @if($photo)
         <h1 class="post-title">写真を投稿する</h1>
         <form action="/index" method="post" enctype="multipart/form-data">
         {{ csrf_field() }}
@@ -24,7 +23,4 @@
         <input type="file" name="photo" class="feedback-input" >
         <input type="submit" value="投稿"">
         </form>
-    @else
-    <h1>投稿はありません</h1>
-    @endif
 @endsection
