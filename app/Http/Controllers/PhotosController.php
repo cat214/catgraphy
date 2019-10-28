@@ -12,8 +12,7 @@ use Illuminate\Support\Facades\Auth;
 class PhotosController extends Controller
 {   
     public function index(){
-        Log::debug('トップページ表示');
-        $photos = Photo::all();
+        $photos = Photo::simplePaginate(8);
         return view('photos.index')->with('photos',$photos);
     }
 
@@ -80,7 +79,7 @@ class PhotosController extends Controller
         $photo->thumbnail = $request->thumbnail;
         $photo->save();
 
-        return redirect('/index')->with('success','投稿を編集しました');
+        return redirect('/mypage')->with('success','投稿を編集しました');
     }
 
     public function delete(Request $request,$photo_id){

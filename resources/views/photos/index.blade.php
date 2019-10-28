@@ -12,6 +12,7 @@
             </li>
         @endforeach
     </ul>
+    {{ $photos->links() }}
 <div>
 @endisset
 @endsection
