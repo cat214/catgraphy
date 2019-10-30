@@ -24,5 +24,6 @@
 - CSS
 - PHP 7.3
 - Laravel 5.4
+- Intervention Image
 - Bootstarp
 - MySQL
