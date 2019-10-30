@@ -27,3 +27,7 @@
 - Intervention Image
 - Bootstarp
 - MySQL
+
+
+##サンプル画像
+- フリー素材ぱくたそ様（www.pakutaso.com）
