@@ -29,6 +29,6 @@ class User extends Authenticatable
 
     public function photos(){
         //User内のphotosプロパティで関連する複数のphotosインスタンスを取り出せるようになる
-        return $this->hasMany('App\Photo','user_id');
+        return $this->hasMany('App\Photo');
     }
 }

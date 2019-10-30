@@ -87,4 +87,5 @@ class PhotosController extends Controller
         $photo->delete();
         return redirect('/index')->with('success','投稿を削除しました');
     }
+
 }

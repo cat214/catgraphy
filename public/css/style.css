@@ -343,7 +343,9 @@
 body{
   color: #FFF;
 }
-
+img{
+  border: 5px #fff solid;
+}
 
 
 /* トップバー　*/
@@ -428,12 +430,12 @@ textarea {
 }
 [type="submit"]:hover { background:#FFF; }
 
-.mypage-form{
-  
+.control-label{
+  color: #111;
 }
-
-
-
+.checkbox label{
+  color: #111;
+}
 
 /* メインコンテンツ */
 #grid{
@@ -444,6 +446,14 @@ textarea {
 	margin: 30px;
 	float: left;
 	list-style: none;
+}
+.content-title{
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
+}
+.pagination{
+  margin-left: 256px;
 }
 
 
@@ -490,5 +500,4 @@ height: auto;
 .btn-danger{
   background-color: red;
 }
-
 

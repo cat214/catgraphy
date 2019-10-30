@@ -12,7 +12,9 @@
             </li>
         @endforeach
     </ul>
-    {{ $photos->links() }}
 <div>
+<div class="pagination">
+        {{ $photos->links() }}
+    </div>
 @endisset
 @endsection

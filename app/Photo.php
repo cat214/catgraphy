@@ -16,4 +16,7 @@ class Photo extends Model
         'photo' => 'required|image|max:2048',
     );
     
+    public function users(){
+        return $this->belongsTo('App\Photo','user_id');
+    }
 }
