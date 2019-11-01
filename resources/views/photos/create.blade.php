@@ -14,7 +14,7 @@
                     <strong>{{ $errors->first('description') }}</strong>
                 </span>
             @endif
-            <textarea name="description" class="feedback-input" placeholder="説明"></textarea>
+            <textarea name="description" class="feedback-input">説明</textarea>
             @if ($errors->has('photo'))
                 <span class="help-block">
                     <strong>{{ $errors->first('photo') }}</strong>

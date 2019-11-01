@@ -29,8 +29,29 @@
 ---削除ボタン、更新ボタン
 
 
+-写真にコメントする機能
+---ログインしてたら表示
+---チャット形式でコメントできる機能
+---写真のidに関連付けて管理
 
--table
+-comments
+------id
+------photo_id
+------user_id
+------comments
+------timestamps
+
+-comments_table migration
+-Comment Model
+-CommentController
+-CRUD
+-Rはログインしなくても使える
+-詳細ページにて表示(モデルで管理)
+-ビューは不要
+
+
+
+
 ---users
 ------name
 ------mail

@@ -23,8 +23,9 @@ Route::get('/photos/{photo_id}/edit','PhotosController@edit')->middleware('auth'
 Route::post('/photos/{photo_id}/edit','PhotosController@update')->middleware('auth');
 Route::get('/photos/{photo_id}/delete','PhotosController@delete')->middleware('auth');
 
-
 Route::get('/mypage','UsersController@mypage')->middleware('auth');
+
+Route::post('/photos/{photo_id}/comment/upload','CommentsController@upload');
 
 
 

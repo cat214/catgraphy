@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Photo;
+use App\Comment;
 use Illuminate\Support\Facades\Log;
 use Image;
 use Illuminate\Support\Facades\Auth;
@@ -56,7 +57,8 @@ class PhotosController extends Controller
     public function detail(Request $request,$photo_id){
         $user = Auth::user();
         $photo = Photo::find($photo_id);
-        return view('photos.detail',compact('user','photo'));
+        $comments = Comment::where('photo_id',$photo_id)->get();
+        return view('photos.detail',compact('user','photo','comments'));
     }
 
     public function edit(Request $request,$photo_id){
