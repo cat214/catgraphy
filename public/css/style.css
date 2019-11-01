@@ -436,6 +436,9 @@ textarea {
 .checkbox label{
   color: #111;
 }
+.checkbox label{
+  color: #fff;
+}
 
 /* メインコンテンツ */
 #grid{

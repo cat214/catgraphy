@@ -5,7 +5,7 @@
             <h1 class="detail-title">{{$photo->title}}</h1>
             <img class="detail-image" src="/storage/photos/{{$photo->photo}}" alt="{{$photo->title}}">
             <p class="detail-description">{{$photo->description}}</p>
-            <p  id="detail-post-username">{{$photo->user->name}}</p>
+            <p  id="detail-post-username">posted by {{$photo->user->name}}</p>
             @if(Auth::check())    
                 @if($user->id === $photo->user_id)
                     <button type=“button” id="detail-link" class="btn btn-link" onclick="location.href='/photos/{{$photo->id}}/edit'">編集する</button>  
