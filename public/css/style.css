@@ -496,6 +496,14 @@ textarea {
 #detail-link{
   background-color: #FFF;
 }
+.photo-comment{
+  border: 5px #fff solid;
+  border-radius: 5px;
+}
+.photo-comment p{
+  font-size: 30px;
+  display: inline-block;
+}
 
 
 /* マイページ */

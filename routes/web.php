@@ -12,6 +12,7 @@
 */
 use Illuminate\Http\Request;
 
+Route::get('/','PhotosController@index');
 Route::get('/index','PhotosController@index');
 Route::post('/index','PhotosController@upload')->middleware('auth');
 
@@ -25,7 +26,8 @@ Route::get('/photos/{photo_id}/delete','PhotosController@delete')->middleware('a
 
 Route::get('/mypage','UsersController@mypage')->middleware('auth');
 
-Route::post('/photos/{photo_id}/comment/upload','CommentsController@upload');
+// Route::post('/photos/{photo_id}/comment/upload','CommentsController@upload');
+Route::post('/photos/comment/upload','CommentsController@upload');
 
 
 

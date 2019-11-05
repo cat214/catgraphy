@@ -17,12 +17,12 @@
     @else
     <p>画像はありません</p>
     @endif
-    @if($comments)
+    @if($comments && $photo)
         <div class="container">
             <div class="row">
                 @foreach($comments as $comment)
                     <div class="col-md-8 col-md-offset-2 photo-comment">
-                        <p>投稿者:{{$comment->user->name}}さん</p>
+                        <p>{{$comment->user->name}}さん:</p>
                         <p>{{$comment->comment}}</p>
                     </div>
                 @endforeach
@@ -32,13 +32,14 @@
     @if(Auth::check())
         <div class="form">
             <h1 class="post-title">コメントする</h1>
-            <form action="/photos/{{$photo->id}}/comment/upload" method="post">
+            <form action="/photos/comment/upload" method="post">
                     {{ csrf_field() }}
                     @if ($errors->has('comment'))
                         <span class="help-block">
                             <strong>{{ $errors->first('comment') }}</strong>
                         </span>
                     @endif
+                    <input type="hidden" name="photo_id" value="{{$photo->id}}">
                     <textarea name="comment" class="feedback-input">コメント</textarea>
                     <input type="submit" value="コメントする"">
             </form>
