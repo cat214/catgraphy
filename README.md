@@ -2,6 +2,7 @@
 
 ## アプリケーション概要
 猫の写真を投稿して共有するアプリケーションです
+<img width="1436" alt="catgraphy" src="https://user-images.githubusercontent.com/56598400/68197186-268b8f80-fffd-11e9-9fbd-90b9b32a5e71.png">
 
 
 ## アプリケーション機能一覧
