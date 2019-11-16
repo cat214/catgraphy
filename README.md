@@ -23,13 +23,11 @@
 
 
 ## 使用技術
-- HTML
-- CSS
-- PHP 7.3
-- Laravel 5.4
-- Intervention Image
-- Bootstarp
-- MySQL
+- サーバーサイド:PHP
+- フロントエンド:HTML/CSS
+- フレームワーク:Laravel/Bootstrap
+- 画像ライブラリ:Intervention Image
+- データベース:MySQL
 
 
 ## サンプル画像
